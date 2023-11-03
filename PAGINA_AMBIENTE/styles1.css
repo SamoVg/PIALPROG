@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9ed88d; /* Verde suave para el fondo */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    animation: circle-in-center 2.5s cubic-bezier(.25, 1, .30, 1) both;
+}
+
+header {
+    background-color: #4caf50; /* Verde para el encabezado */
+    background-image: url(../PAGINA_AMBIENTE/img/bas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    color: rgb(20, 211, 29);
+    padding: 80px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+.welcome {
+    background-color: #c5e1a5; /* Verde claro para el área de bienvenida */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 10px;
+    transition: transform 0.3s;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nature {
+    background-color: #4caf50; /* Verde más oscuro para el botón de naturaleza */
+}
+
+.sustainability {
+    background-color: #8bc34a; /* Verde claro para el botón de sustentabilidad */
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4caf50; /* Verde más oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Nueva animación */
+@keyframes circle-in-center {
+    from {
+        clip-path: circle(0%);
+    }
+    to {
+        clip-path: circle(125%);
+    }
+}
